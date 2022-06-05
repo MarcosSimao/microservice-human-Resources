@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 
 @Component
-@FeignClient(name = "ms-trabalhador",url = "http://localhost:8001",path = "/works")
+@FeignClient(name = "service2",url = "http://localhost:8001",path = "/works")
 public interface TrabalhadorFeingnCliente {
 
     @GetMapping("/cpf")

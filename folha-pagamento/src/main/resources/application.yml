@@ -1,0 +1,6 @@
+server:
+  port: 8002
+service2:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    listOfServers: http://localhost:8001,http://localhost:8201

@@ -1,6 +1,7 @@
 package com.api.trabalhador.service;
 
 import com.api.trabalhador.model.Trabalhador;
+import com.api.trabalhador.model.exceptions.ObjectNotFoundException;
 import com.api.trabalhador.repository.TrabalhadorRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -23,6 +24,9 @@ public class TrabalhadorService {
 
     public Trabalhador findByCpf(String cpf){
         Optional<Trabalhador> trabalhador= trabalhadorRepository.findByCpf(cpf);
+        if(!trabalhador.isPresent()){
+            throw new ObjectNotFoundException("cpf nao encontrado");
+        }
         return trabalhador.get();
     }
 

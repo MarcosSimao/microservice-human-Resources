@@ -9,14 +9,15 @@ import org.springframework.context.annotation.Configuration;
 public class GatewayConfig {
     @Bean
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
+
         return builder.routes()
                 .route(r -> r.path("/works/**")
-                        .uri("http://localhost:8001/")
+                        .uri("lb://ms-trabalhador")
 
                        )
 
                 .route(r -> r.path("/payments/**")
-                        .uri("http://localhost:8002/")
+                        .uri("lb://ms-folha-pagamento")
                         )
                 .build();
     }

@@ -1,10 +1,10 @@
-package com.api.msconfigserver;
+package com.api.msuser;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsConfigServerApplicationTests {
+class MsUserApplicationTests {
 
 	@Test
 	void contextLoads() {

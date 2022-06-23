@@ -1,7 +1,7 @@
-package com.api.msuser.controller;
+package com.api.msoauth.controller;
 
-import com.api.msuser.model.User;
-import com.api.msuser.service.UserService;
+import com.api.msoauth.model.User;
+import com.api.msoauth.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -11,20 +11,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/oauth")
 @RequiredArgsConstructor
 @Slf4j
-public class UserController {
+public class OauthController {
     private final UserService userService;
-
-    @GetMapping("{id}")
-    public ResponseEntity<User> findById(@PathVariable Long id) {
-        log.info("id= {}",id);
-        return ResponseEntity.ok().body(userService.findById(id));
-    }
     @GetMapping("/email/{email}")
     public ResponseEntity<User> findByEmail(@PathVariable String email) {
         log.info("email= {}",email);
         return ResponseEntity.ok().body(userService.findByEmail(email));
     }
+
 }

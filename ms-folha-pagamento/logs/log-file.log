@@ -1,0 +1,179 @@
+2022-07-07 23:02:04.579  INFO 1772 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-07-07 23:02:06.718  INFO 1772 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-07-07 23:02:06.719  WARN 1772 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/ms-folha-pagamento/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-07-07 23:02:06.723  INFO 1772 --- [main] c.a.f.FolhaPagamentoApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-07 23:02:07.496  INFO 1772 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1705ee53-d036-3a37-bf33-ef48dee6dbd6
+2022-07-07 23:02:07.847  INFO 1772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-07-07 23:02:07.858  INFO 1772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-07 23:02:07.859  INFO 1772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 23:02:08.006  INFO 1772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-07 23:02:08.006  INFO 1772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1264 ms
+2022-07-07 23:02:08.267  INFO 1772 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-trabalhador' URL not provided. Will try picking an instance via load-balancing.
+2022-07-07 23:02:08.312  WARN 1772 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-07 23:02:08.313  INFO 1772 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-07 23:02:08.317  WARN 1772 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-07 23:02:08.317  INFO 1772 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-07 23:02:09.721  INFO 1772 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-07-07 23:02:10.990  INFO 1772 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-07-07 23:02:10.997  INFO 1772 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-07-07 23:02:11.036  WARN 1772 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-07-07 23:02:11.042  INFO 1772 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-07-07 23:02:11.086  INFO 1772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60557 (http) with context path ''
+2022-07-07 23:02:11.086  INFO 1772 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60557
+2022-07-07 23:02:11.091  INFO 1772 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-07 23:02:11.161  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-07 23:02:11.310  INFO 1772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-07-07 23:02:11.310  INFO 1772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-07-07 23:02:11.452  INFO 1772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-07-07 23:02:11.453  INFO 1772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-07-07 23:02:11.570  INFO 1772 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-07 23:02:11.585  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-07 23:02:11.586  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-07 23:02:11.586  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-07 23:02:11.586  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-07 23:02:11.586  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-07 23:02:11.586  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-07 23:02:11.586  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-07 23:02:11.768  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-07 23:02:11.769  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-07 23:02:11.771  INFO 1772 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-07 23:02:11.775  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657245731774 with initial instances count: 1
+2022-07-07 23:02:11.776  INFO 1772 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-FOLHA-PAGAMENTO with eureka with status UP
+2022-07-07 23:02:11.777  INFO 1772 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657245731777, current=UP, previous=STARTING]
+2022-07-07 23:02:11.779  INFO 1772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:9581ae3ef98675d76fac0a073c266b13: registering service...
+2022-07-07 23:02:11.810  INFO 1772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:9581ae3ef98675d76fac0a073c266b13 - registration status: 204
+2022-07-07 23:02:11.866  INFO 1772 --- [main] c.a.f.FolhaPagamentoApplication          : Started FolhaPagamentoApplication in 10.251 seconds (JVM running for 10.732)
+2022-07-07 23:04:35.427  INFO 1772 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 23:04:35.428  INFO 1772 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-07 23:04:35.429  INFO 1772 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-07 23:07:11.590  INFO 1772 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-07 23:07:23.316  INFO 1772 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-FOLHA-PAGAMENTO with eureka with status DOWN
+2022-07-07 23:07:23.317  INFO 1772 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657246043317, current=DOWN, previous=UP]
+2022-07-07 23:07:23.317  INFO 1772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:9581ae3ef98675d76fac0a073c266b13: registering service...
+2022-07-07 23:07:23.337  INFO 1772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:9581ae3ef98675d76fac0a073c266b13 - registration status: 204
+2022-07-07 23:07:23.392  INFO 1772 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-07 23:07:26.395  INFO 1772 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-07 23:07:26.414  INFO 1772 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:9581ae3ef98675d76fac0a073c266b13 - deregister  status: 200
+2022-07-07 23:07:26.424  INFO 1772 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-07 23:10:50.163  INFO 1276 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-07-07 23:10:52.286  INFO 1276 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-07-07 23:10:52.287  WARN 1276 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/ms-folha-pagamento/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-07-07 23:10:52.290  INFO 1276 --- [main] c.a.f.FolhaPagamentoApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-07 23:10:53.590  INFO 1276 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1705ee53-d036-3a37-bf33-ef48dee6dbd6
+2022-07-07 23:10:54.084  INFO 1276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-07-07 23:10:54.095  INFO 1276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-07 23:10:54.096  INFO 1276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 23:10:54.276  INFO 1276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-07 23:10:54.277  INFO 1276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1972 ms
+2022-07-07 23:10:54.655  INFO 1276 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-trabalhador' URL not provided. Will try picking an instance via load-balancing.
+2022-07-07 23:10:54.789  WARN 1276 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-07 23:10:54.789  INFO 1276 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-07 23:10:54.793  WARN 1276 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-07 23:10:54.797  INFO 1276 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-07 23:10:56.287  INFO 1276 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-07-07 23:10:57.545  INFO 1276 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-07-07 23:10:57.551  INFO 1276 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-07-07 23:10:57.591  WARN 1276 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-07-07 23:10:57.598  INFO 1276 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-07-07 23:10:57.644  INFO 1276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60844 (http) with context path ''
+2022-07-07 23:10:57.645  INFO 1276 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60844
+2022-07-07 23:10:57.649  INFO 1276 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-07 23:10:57.720  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-07 23:10:57.884  INFO 1276 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-07-07 23:10:57.884  INFO 1276 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-07-07 23:10:58.023  INFO 1276 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-07-07 23:10:58.023  INFO 1276 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-07-07 23:10:58.136  INFO 1276 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-07 23:10:58.152  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-07 23:10:58.152  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-07 23:10:58.152  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-07 23:10:58.152  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-07 23:10:58.152  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-07 23:10:58.153  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-07 23:10:58.153  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-07 23:10:58.351  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-07 23:10:58.353  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-07 23:10:58.355  INFO 1276 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-07 23:10:58.359  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657246258358 with initial instances count: 0
+2022-07-07 23:10:58.360  INFO 1276 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-FOLHA-PAGAMENTO with eureka with status UP
+2022-07-07 23:10:58.361  INFO 1276 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657246258361, current=UP, previous=STARTING]
+2022-07-07 23:10:58.363  INFO 1276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:b25a47026fc1a454b685e39b07dc30de: registering service...
+2022-07-07 23:10:58.496  INFO 1276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:b25a47026fc1a454b685e39b07dc30de - registration status: 204
+2022-07-07 23:10:58.518  INFO 1276 --- [main] c.a.f.FolhaPagamentoApplication          : Started FolhaPagamentoApplication in 11.286 seconds (JVM running for 11.757)
+2022-07-07 23:11:28.354  INFO 1276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-07 23:11:28.355  INFO 1276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-07 23:11:28.355  INFO 1276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-07 23:11:28.355  INFO 1276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-07 23:11:28.355  INFO 1276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-07 23:11:28.355  INFO 1276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-07-07 23:11:28.355  INFO 1276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-07 23:11:28.375  INFO 1276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-07 23:11:44.281  INFO 1276 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 23:11:44.281  INFO 1276 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-07 23:11:44.343  INFO 1276 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 62 ms
+2022-07-07 23:15:58.164  INFO 1276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-07 23:19:27.373  INFO 1276 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-FOLHA-PAGAMENTO with eureka with status DOWN
+2022-07-07 23:19:27.373  INFO 1276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657246767373, current=DOWN, previous=UP]
+2022-07-07 23:19:27.373  INFO 1276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:b25a47026fc1a454b685e39b07dc30de: registering service...
+2022-07-07 23:19:27.389  INFO 1276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:b25a47026fc1a454b685e39b07dc30de - registration status: 204
+2022-07-07 23:19:27.443  INFO 1276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-07 23:19:30.456  WARN 1276 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2022-07-07 23:19:30.458  INFO 1276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-07 23:19:30.477  INFO 1276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:b25a47026fc1a454b685e39b07dc30de - deregister  status: 200
+2022-07-07 23:19:30.489  INFO 1276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-07 23:19:43.232  INFO 12268 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-07-07 23:19:45.330  INFO 12268 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-07-07 23:19:45.331  WARN 12268 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/ms-folha-pagamento/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-07-07 23:19:45.334  INFO 12268 --- [main] c.a.f.FolhaPagamentoApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-07 23:19:46.239  INFO 12268 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c0fa123f-3636-32e0-8a9d-62df2f7bd8ca
+2022-07-07 23:19:46.618  INFO 12268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-07-07 23:19:46.630  INFO 12268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-07 23:19:46.631  INFO 12268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 23:19:46.820  INFO 12268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-07 23:19:46.821  INFO 12268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1472 ms
+2022-07-07 23:19:47.446  INFO 12268 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-trabalhador' URL not provided. Will try picking an instance via load-balancing.
+2022-07-07 23:19:47.526  WARN 12268 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-07 23:19:47.527  INFO 12268 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-07 23:19:47.538  WARN 12268 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-07 23:19:47.538  INFO 12268 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-07 23:19:50.457  INFO 12268 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-07-07 23:19:50.983  INFO 12268 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-07-07 23:19:51.032  WARN 12268 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-07-07 23:19:51.040  INFO 12268 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2022-07-07 23:19:51.092  INFO 12268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61077 (http) with context path ''
+2022-07-07 23:19:51.107  INFO 12268 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 61077
+2022-07-07 23:19:51.113  INFO 12268 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-07 23:19:51.192  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-07 23:19:51.344  INFO 12268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-07-07 23:19:51.344  INFO 12268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-07-07 23:19:51.509  INFO 12268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-07-07 23:19:51.509  INFO 12268 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-07-07 23:19:51.760  INFO 12268 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-07 23:19:51.779  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-07 23:19:51.780  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-07 23:19:51.780  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-07 23:19:51.780  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-07 23:19:51.780  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-07 23:19:51.780  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-07 23:19:51.780  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-07 23:19:51.975  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-07 23:19:51.977  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-07 23:19:51.979  INFO 12268 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-07 23:19:51.983  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657246791982 with initial instances count: 1
+2022-07-07 23:19:51.985  INFO 12268 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-FOLHA-PAGAMENTO with eureka with status UP
+2022-07-07 23:19:51.986  INFO 12268 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657246791986, current=UP, previous=STARTING]
+2022-07-07 23:19:51.988  INFO 12268 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:19558cfd541b8d50eab7bc7fe277a309: registering service...
+2022-07-07 23:19:52.026  INFO 12268 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:19558cfd541b8d50eab7bc7fe277a309 - registration status: 204
+2022-07-07 23:19:52.161  INFO 12268 --- [main] c.a.f.FolhaPagamentoApplication          : Started FolhaPagamentoApplication in 12.112 seconds (JVM running for 12.906)
+2022-07-07 23:19:58.193  INFO 12268 --- [http-nio-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 23:19:58.193  INFO 12268 --- [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-07 23:19:58.194  INFO 12268 --- [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-07 23:20:03.641  INFO 12268 --- [http-nio-auto-1-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 164 ms
+2022-07-07 23:23:26.098  INFO 12268 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-FOLHA-PAGAMENTO with eureka with status DOWN
+2022-07-07 23:23:26.099  INFO 12268 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657247006099, current=DOWN, previous=UP]
+2022-07-07 23:23:26.099  INFO 12268 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:19558cfd541b8d50eab7bc7fe277a309: registering service...
+2022-07-07 23:23:26.130  INFO 12268 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:19558cfd541b8d50eab7bc7fe277a309 - registration status: 204
+2022-07-07 23:23:26.167  INFO 12268 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-07 23:23:29.182  INFO 12268 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-07 23:23:29.200  INFO 12268 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-FOLHA-PAGAMENTO/ms-folha-pagamento:19558cfd541b8d50eab7bc7fe277a309 - deregister  status: 200
+2022-07-07 23:23:29.211  INFO 12268 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

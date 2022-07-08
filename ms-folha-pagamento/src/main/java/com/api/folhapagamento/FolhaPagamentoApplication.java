@@ -1,5 +1,6 @@
 package com.api.folhapagamento;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
@@ -15,10 +16,14 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
+@Slf4j
 public class FolhaPagamentoApplication {
 
 
 	public static void main(String[] args) {
+		log.info("Informacao : {}","teste info");
+		log.error("Informacao : {}","teste error");
+		log.warn("Informacao : {}","teste warn");
 		SpringApplication.run(FolhaPagamentoApplication.class, args);
 	}
 

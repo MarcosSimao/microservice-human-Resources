@@ -11,11 +11,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/oauth")
+@RequestMapping("/oauth-user")
 @RequiredArgsConstructor
 @Slf4j
 public class OauthController {
     private final UserService userService;
+    @GetMapping()
+    public String bemvindo() {
+        return "bem vindo";
+    }
     @GetMapping("/email/{email}")
     public ResponseEntity<User> findByEmail(@PathVariable String email) {
         log.info("email= {}",email);
